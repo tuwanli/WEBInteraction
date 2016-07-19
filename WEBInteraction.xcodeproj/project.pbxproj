@@ -15,6 +15,8 @@
 		0D5D933D1D364B4100141E1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5D933B1D364B4100141E1C /* LaunchScreen.storyboard */; };
 		0D5D93481D364B4100141E1C /* WEBInteractionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D93471D364B4100141E1C /* WEBInteractionTests.m */; };
 		0D5D93531D364B4100141E1C /* WEBInteractionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D93521D364B4100141E1C /* WEBInteractionUITests.m */; };
+		0DD810871D3E007A003858A8 /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 0DD810861D3E007A003858A8 /* ExampleApp.html */; };
+		DD9C604A5D5A10EF679A2F2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A955826F85DD07969CCDE569 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		0D5D934E1D364B4100141E1C /* WEBInteractionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WEBInteractionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5D93521D364B4100141E1C /* WEBInteractionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEBInteractionUITests.m; sourceTree = "<group>"; };
 		0D5D93541D364B4100141E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DD810861D3E007A003858A8 /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		2BB53C5FFF069E284A8208BA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A955826F85DD07969CCDE569 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECF0CAA67DDC1CB060D5910 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9C604A5D5A10EF679A2F2D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +88,13 @@
 		0D5D93211D364B4000141E1C = {
 			isa = PBXGroup;
 			children = (
+				0DD810861D3E007A003858A8 /* ExampleApp.html */,
 				0D5D932C1D364B4100141E1C /* WEBInteraction */,
 				0D5D93461D364B4100141E1C /* WEBInteractionTests */,
 				0D5D93511D364B4100141E1C /* WEBInteractionUITests */,
 				0D5D932B1D364B4100141E1C /* Products */,
+				17D60F57C224D0B9F3B5BE3B /* Pods */,
+				995AFD38CE16C9C5DCF1AE00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +150,23 @@
 			path = WEBInteractionUITests;
 			sourceTree = "<group>";
 		};
+		17D60F57C224D0B9F3B5BE3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AECF0CAA67DDC1CB060D5910 /* Pods.debug.xcconfig */,
+				2BB53C5FFF069E284A8208BA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		995AFD38CE16C9C5DCF1AE00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A955826F85DD07969CCDE569 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D5D93571D364B4100141E1C /* Build configuration list for PBXNativeTarget "WEBInteraction" */;
 			buildPhases = (
+				9CC51F0E357E807289401C3B /* Check Pods Manifest.lock */,
 				0D5D93261D364B4100141E1C /* Sources */,
 				0D5D93271D364B4100141E1C /* Frameworks */,
 				0D5D93281D364B4100141E1C /* Resources */,
+				178B42A689727B6621104089 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +275,7 @@
 				0D5D933D1D364B4100141E1C /* LaunchScreen.storyboard in Resources */,
 				0D5D933A1D364B4100141E1C /* Assets.xcassets in Resources */,
 				0D5D93381D364B4100141E1C /* Main.storyboard in Resources */,
+				0DD810871D3E007A003858A8 /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +294,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		178B42A689727B6621104089 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC51F0E357E807289401C3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D5D93261D364B4100141E1C /* Sources */ = {
@@ -409,9 +472,11 @@
 		};
 		0D5D93581D364B4100141E1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECF0CAA67DDC1CB060D5910 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WEBInteraction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.WEBInteraction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +485,11 @@
 		};
 		0D5D93591D364B4100141E1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB53C5FFF069E284A8208BA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WEBInteraction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.WEBInteraction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +563,7 @@
 				0D5D93591D364B4100141E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D5D935A1D364B4100141E1C /* Build configuration list for PBXNativeTarget "WEBInteractionTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +572,7 @@
 				0D5D935C1D364B4100141E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D5D935D1D364B4100141E1C /* Build configuration list for PBXNativeTarget "WEBInteractionUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +581,7 @@
 				0D5D935F1D364B4100141E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

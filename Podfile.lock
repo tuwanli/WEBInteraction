@@ -1,0 +1,13 @@
+PODS:
+  - JSONKit (1.4)
+  - WebViewJavascriptBridge (2.1.1):
+    - JSONKit
+
+DEPENDENCIES:
+  - WebViewJavascriptBridge (~> 2.0)
+
+SPEC CHECKSUMS:
+  JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+  WebViewJavascriptBridge: 2d728b5e29c3d71ceaad1b11a02b900aa59a0985
+
+COCOAPODS: 0.38.2
